@@ -1,0 +1,21 @@
+# Python virtual environment
+# venv/ # Keep this commented out or remove if using conda
+genoview_env/ # Make sure this matches your conda env name if different
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# IDE / Editor specific
+.vscode/
+.idea/
+*.swp
+
+# Secrets (we'll create this later)
+.env
+
+# Data files (optional - decide later if you want to track small example data)
+# data/
+
+# Output files (optional - generally don't track generated results)
+# results/
