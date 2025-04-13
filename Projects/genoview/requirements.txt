@@ -1,6 +1,13 @@
-# requirements.txt - Core dependencies for GenoView Project
-
-biopython>=1.79
-requests>=2.32.3
-numpy>=1.23.5
-python-dotenv>=1.1.0
+biopython @ file:///D:/bld/biopython_1666879378184/work
+certifi==2025.1.31
+charset-normalizer==3.4.1
+colorama==0.4.6
+Cython==3.0.12
+idna==3.10
+numpy @ file:///D:/bld/numpy_1668919338279/work
+psutil==7.0.0
+pyahocorasick==2.1.0
+pyfastx==2.2.0
+python-dotenv==1.1.0
+requests==2.32.3
+urllib3==2.4.0

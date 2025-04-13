@@ -18,4 +18,5 @@ __pycache__/
 # data/
 
 # Output files (optional - generally don't track generated results)
-# results/
+# results/.env 
+.env 
