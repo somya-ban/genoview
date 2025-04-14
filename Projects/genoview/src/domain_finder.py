@@ -230,38 +230,31 @@ def find_domains_interpro(protein_sequences: list[tuple[str, str]], poll_interva
     print(f"Domain finding complete. Found {len(all_domain_results)} domain matches.")
     return all_domain_results
 
-
-# --- Example Usage (Conceptual - requires real protein sequences & EBI_EMAIL set) ---
+# --- Example Usage (Placeholder - Not meant for direct execution of full logic) ---
 if __name__ == "__main__":
-    # IMPORTANT: Replace with actual protein sequences from your ORF finder output
-    #            and ensure you have a .env file with your EBI_EMAIL set.
-    example_proteins = [
-        ("orf1_test", "MPRKKTGKTTKRKKEKKEVKKAKKRLEEKKKAEKKAKVAEKKAKKADKKAVKEEAKKVAKKEAKKVAKVEAKKVAKVEAKKP"), # Example short protein
-        ("orf2_invalid_chars", "MAAAAAAAAA---InvalidChars---GP"), # Test invalid sequence handling
-        ("orf3_short", "MAGKL"), # Test short sequence handling
-        # Add a longer, real protein sequence fragment if possible for better testing
-         ("orf4_real_fragment", "MELAALCRWGLLLALLPPGAASTQVCTGTDMKLRLPASPETHLDMLRHLYQGCQVVQGNLELTYLPTNASLSFLQDIQEVQGYVLIAHNQVRQVPLQRLRIVRGTQLFEDNYALAVLDNGDPLNNMSADLSPGAQLWRFQTLRLWKLQALQAMSRPTHPPTLQRMYVLLPPLSK") # Example fragment
-    ]
+    # This block will only run if the script is executed directly.
+    # It's now just a placeholder to show conceptual usage or for adding
+    # very simple, non-API-calling tests in the future if needed.
 
-    print("Attempting to find domains using InterProScan API...")
-    if USER_EMAIL == "email_not_set@example.com":
-         print("\n*** WARNING: EBI_EMAIL is not set in your environment. API calls will likely fail. ***")
-         print("*** Create a .env file in the project root with EBI_EMAIL=your_email@example.com ***")
-         print("*** Add .env to your .gitignore file! ***\n")
+    print("--- src/domain_finder.py ---")
+    print("This script contains functions for finding domains via InterProScan API.")
+    print("It is intended to be imported by the main analysis pipeline.")
+    print("Running this script directly does not perform a full analysis.")
 
-
-    try:
-        domains = find_domains_interpro(example_proteins, poll_interval=20, max_wait_minutes=10) # Adjust polling/wait as needed
-
-        print("\n--- Parsed Domain Results ---")
-        if domains:
-            # Pretty print the first few results
-            print(json.dumps(domains[:5], indent=2))
-            if len(domains) > 5:
-                print(f"\n... and {len(domains) - 5} more domain matches.")
-        else:
-            print("No domains found or retrieved.")
-
-    except Exception as e:
-        print(f"\nAn unexpected error occurred during the example run:")
-        traceback.print_exc()
+    # Example of how the main function *would* be called by the pipeline
+    # (Do not uncomment unless testing small, specific things without API calls)
+    # example_proteins_conceptual = [
+    #     ("orf1_conceptual", "MSKGEELFTGVVPILVELDGDVNGHKFSVSGEGEGDATYGKLTLKFICTTGKLPVPWPTLVTTFSYGVQCFSRYPDHMKRHDFFKSAMPEGYVQERTIFFKDDGNYKTRAEVKFEGDTLVNRIELKGIDFKEDGNILGHKLEYNYNSHNVYIMADKQKNGIKVNFKIRHNIEDGSVQLADHYQQNTPIGDGPVLLPDNHYLSTQSALSKDPNEKRDHMVLLEFVTAAGITLGMDELYK"),
+    # ]
+    # print("\nConceptual call to find_domains_interpro (API calls disabled in this block):")
+    # try:
+    #      # Normally you would call find_domains_interpro here if you wanted
+    #      # to test *without* relying on the pipeline script, but ensure you handle
+    #      # API keys and potential costs/errors appropriately.
+    #      # domains = find_domains_interpro(example_proteins_conceptual)
+    #      # print(json.dumps(domains, indent=2))
+    #      print("Example usage: Call find_domains_interpro(proteins_list) from another script.")
+    # except NameError: # If find_domains_interpro isn't defined when running directly (shouldn't happen)
+    #      print("Error: find_domains_interpro function not found.")
+    # except Exception as e:
+    #      print(f"An error occurred: {e}")
