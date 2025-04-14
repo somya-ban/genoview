@@ -1,13 +1,18 @@
-biopython @ file:///D:/bld/biopython_1666879378184/work
-certifi==2025.1.31
-charset-normalizer==3.4.1
-colorama==0.4.6
-Cython==3.0.12
-idna==3.10
-numpy @ file:///D:/bld/numpy_1668919338279/work
-psutil==7.0.0
-pyahocorasick==2.1.0
-pyfastx==2.2.0
-python-dotenv==1.1.0
-requests==2.32.3
-urllib3==2.4.0
+biopython @ file:///D:/bld/biopython_1737241712274/work
+Brotli @ file:///D:/bld/brotli-split_1725267609074/work
+certifi @ file:///home/conda/feedstock_root/build_artifacts/certifi_1739515848642/work/certifi
+cffi @ file:///D:/bld/cffi_1725560649097/work
+charset-normalizer @ file:///home/conda/feedstock_root/build_artifacts/charset-normalizer_1735929714516/work
+h2 @ file:///home/conda/feedstock_root/build_artifacts/h2_1738578511449/work
+hpack @ file:///home/conda/feedstock_root/build_artifacts/hpack_1737618293087/work
+hyperframe @ file:///home/conda/feedstock_root/build_artifacts/hyperframe_1737618333194/work
+idna @ file:///home/conda/feedstock_root/build_artifacts/idna_1733211830134/work
+mkl-service==2.4.0
+numpy @ file:///D:/bld/numpy_1742254804912/work/dist/numpy-2.2.4-cp310-cp310-win_amd64.whl#sha256=df6784b1c3b1c2ec8deda2b3443792726b67a3f4dd9833800d6b4248492292a1
+pycparser @ file:///home/conda/feedstock_root/build_artifacts/bld/rattler-build_pycparser_1733195786/work
+PySocks @ file:///D:/bld/pysocks_1733217287171/work
+python-dotenv @ file:///home/conda/feedstock_root/build_artifacts/bld/rattler-build_python-dotenv_1742948348/work
+requests @ file:///home/conda/feedstock_root/build_artifacts/requests_1733217035951/work
+urllib3 @ file:///home/conda/feedstock_root/build_artifacts/urllib3_1744323578849/work
+win_inet_pton @ file:///D:/bld/win_inet_pton_1733130564612/work
+zstandard==0.23.0
