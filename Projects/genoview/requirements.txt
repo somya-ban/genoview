@@ -1,63 +1,25 @@
-altair==5.5.0
-annotated-types==0.7.0
-anyio==4.9.0
-attrs==25.3.0
-biopython @ file:///D:/bld/biopython_1737241712274/work
-blinker==1.9.0
-Brotli @ file:///D:/bld/brotli-split_1725267609074/work
-cachetools==5.5.2
-certifi @ file:///home/conda/feedstock_root/build_artifacts/certifi_1739515848642/work/certifi
-cffi @ file:///D:/bld/cffi_1725560649097/work
-charset-normalizer @ file:///home/conda/feedstock_root/build_artifacts/charset-normalizer_1735929714516/work
-click==8.1.8
-colorama==0.4.6
-distro==1.9.0
-exceptiongroup==1.2.2
-gitdb==4.0.12
-GitPython==3.1.44
-h11==0.14.0
-h2 @ file:///home/conda/feedstock_root/build_artifacts/h2_1738578511449/work
-hpack @ file:///home/conda/feedstock_root/build_artifacts/hpack_1737618293087/work
-httpcore==1.0.8
-httpx==0.28.1
-hyperframe @ file:///home/conda/feedstock_root/build_artifacts/hyperframe_1737618333194/work
-idna @ file:///home/conda/feedstock_root/build_artifacts/idna_1733211830134/work
-Jinja2==3.1.6
-jiter==0.9.0
-jsonschema==4.23.0
-jsonschema-specifications==2024.10.1
-MarkupSafe==3.0.2
-mkl-service==2.4.0
-narwhals==1.34.1
-numpy @ file:///D:/bld/numpy_1742254804912/work/dist/numpy-2.2.4-cp310-cp310-win_amd64.whl#sha256=df6784b1c3b1c2ec8deda2b3443792726b67a3f4dd9833800d6b4248492292a1
-packaging==24.2
-pandas==2.2.3
-pillow==11.2.1
-protobuf==5.29.4
-pyarrow==19.0.1
-pycparser @ file:///home/conda/feedstock_root/build_artifacts/bld/rattler-build_pycparser_1733195786/work
-pydantic==2.11.3
-pydantic_core==2.33.1
-pydeck==0.9.1
-PySocks @ file:///D:/bld/pysocks_1733217287171/work
-python-dateutil==2.9.0.post0
-python-dotenv @ file:///home/conda/feedstock_root/build_artifacts/bld/rattler-build_python-dotenv_1742948348/work
-pytz==2025.2
-referencing==0.36.2
-requests @ file:///home/conda/feedstock_root/build_artifacts/requests_1733217035951/work
-rpds-py==0.24.0
-six==1.17.0
-smmap==5.0.2
-sniffio==1.3.1
-streamlit==1.44.1
-tenacity==9.1.2
-toml==0.10.2
-tornado==6.4.2
-tqdm==4.67.1
-typing-inspection==0.4.0
-typing_extensions==4.13.2
-tzdata==2025.2
-urllib3 @ file:///home/conda/feedstock_root/build_artifacts/urllib3_1744323578849/work
-watchdog==6.0.0
-win_inet_pton @ file:///D:/bld/win_inet_pton_1733130564612/work
-zstandard==0.23.0
+# Core Bio libraries
+biopython>=1.79
+numpy>=1.22  # Used by biopython, pandas, matplotlib
+
+# API Interaction
+requests>=2.25
+python-dotenv>=1.0.0
+
+# Data Handling & UI Tables
+pandas>=1.5
+
+# Web Application UI
+streamlit>=1.30
+
+# Plotting
+matplotlib>=3.5
+# Use hyphen for PyPI package name:
+dna-features-viewer>=3.1
+
+# Testing Framework
+pytest>=7.0 # Example minimum version
+pytest-mock>=3.10 # Example minimum version
+
+# LLM Interaction (Using requests for HF, so covered)
+# If using OpenAI, add: openai>=1.0.0
