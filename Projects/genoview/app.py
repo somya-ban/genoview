@@ -111,7 +111,7 @@ def create_feature_plot(analysis_results: dict):
 
             feature_color = domain_color_map.get(label, domain_color)
             all_features.append(GraphicFeature(start=domain_start_dna, end=domain_end_dna, strand=domain_strand_val,
-                                               color=feature_color, label=label, thickness=10, fontdict={'size':8}))
+                                   color=feature_color, label=label, thickness=10))
         except (ValueError, TypeError, AttributeError, KeyError): continue # Skip malformed domains/ORFs
 
     if not all_features:
