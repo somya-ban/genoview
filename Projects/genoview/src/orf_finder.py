@@ -161,7 +161,7 @@ def find_orfs_biopython(sequence_record: SeqRecord, min_protein_length: int = 25
                             "end": final_dna_end,
                             "strand": strand_char,
                             "length_bp": orf_dna_len,
-                            "protein_sequence": orf_protein
+                            "protein_sequence": str(orf_protein)
                         })
 
                     # Reset ORF tracking after encountering a stop codon, regardless of length check
