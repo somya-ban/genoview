@@ -125,7 +125,7 @@ def create_feature_plot(analysis_results: dict):
         # Adjust figure width dynamically, set a minimum and maximum
         fig_width = max(8, min(25, seq_len / 100))
         fig, ax = plt.subplots(1, figsize=(fig_width, 4 + len(all_features) // 10)) # Adjust height slightly based on feature count
-        record.plot(ax=ax, with_sequence_level=False) # Let plot decide width based on figsize
+        record.plot(ax=ax, figure_width=10) # Let plot decide width based on figsize
         ax.set_title(f"Feature Map for {analysis_results.get('sequence_id', '')}", fontsize=10)
         ax.set_xlabel("Sequence Position (bp)")
         # Try to prevent labels overlapping - might need more sophisticated logic for many features
