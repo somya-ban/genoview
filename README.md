@@ -3,7 +3,8 @@
 GenoView is a web-based platform designed to streamline the annotation of DNA/RNA sequences. It integrates core bioinformatics analyses with LLM-powered interpretation to provide researchers with structural features, functional predictions, and concise biological summaries from just a FASTA file.
 
 ![GenoView Screenshot/GIF](link/to/your/screenshot_or_gif.gif)
-*(Replace with your actual GIF/Screenshot link after creating it)*
+![image](https://github.com/user-attachments/assets/7afc7691-3222-4e5b-b5fc-293cfe2a43dd)
+
 
 ## Features ✨
 
