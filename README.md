@@ -1,11 +1,14 @@
 # GenoView: Intelligent Sequence Annotator 🧬
 
 GenoView is a web-based platform designed to streamline the annotation of DNA/RNA sequences. It integrates core bioinformatics analyses with LLM-powered interpretation to provide researchers with structural features, functional predictions, and concise biological summaries from just a FASTA file.
-
-![GenoView Screenshot/GIF](link/to/your/screenshot_or_gif.gif)
-![image](https://github.com/user-attachments/assets/7afc7691-3222-4e5b-b5fc-293cfe2a43dd)
-
-
+<div>
+    <a href="https://www.loom.com/share/02d91f2f065942ddb662ebeee5484ab1">
+      <p>GenoView - 14 April 2025 - Watch Video</p>
+    </a>
+    <a href="https://www.loom.com/share/02d91f2f065942ddb662ebeee5484ab1">
+      <img style="max-width:300px;" src="https://cdn.loom.com/sessions/thumbnails/02d91f2f065942ddb662ebeee5484ab1-131f287f6c9c7f11-full-play.gif">
+    </a>
+  </div>
 ## Features ✨
 
 *   **FASTA Upload:** Simple interface to upload single-sequence FASTA files.
