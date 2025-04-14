@@ -9,6 +9,7 @@ import traceback    # For showing errors nicely
 from dna_features_viewer import GraphicFeature, GraphicRecord # For plotting
 import matplotlib.pyplot as plt # For plotting
 import numpy as np              # For plotting helpers
+import time
 
 # --- Add src directory to Python path for imports ---
 app_dir = os.path.dirname(os.path.abspath(__file__))
